@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+body {
+  margin:  0;
+  font-family: Montserrat;
+}
+
+.btn-main {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0.3em 0.5em;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background: #fff;
+    border:none;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #7795f8;
+    outline: none;
+}
+
+header {
+  /*background-image: url("");*/
+  background-image: linear-gradient(green, blue, black);
+  height: 50vh;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 51.2px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+header button:active {
+  font-size: 19px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+header button:hover {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+main h2 {
+  color: #8992EA;
+  background-color: #F6F9FC;
+  font-size: 19px;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Cards */
+
+#cards img {
+  height: 66px;
+  width: 66px;
+}
+
+#cards section {
+  padding: 48px;
+}
+
+#cards p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#cards h3 {
+  color: #6B7591;
+}
+
+
+#cards > section:nth-child(2) {
+  border-top: 2px solid black;
+}
+
+/* Desktop Layout */
+
+@media only screen and (min-width: 900px) {
+  #cards {
+    display: flex;
+  }
+
+  #cards > section:nth-child(2) {
+    border-top: none;
+    border-left: 1px solid black;
+  }
+}
